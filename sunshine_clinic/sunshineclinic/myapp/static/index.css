@@ -1,0 +1,158 @@
+*{
+			padding:0px;
+			margin:0px;
+		}
+
+		#about{
+
+		  width:100%;
+		  height:700px;
+
+
+		}
+		#about-img{
+			height:500px;
+			width:500px;
+			position:relative;
+			top:20%;
+			left:10%;
+
+		}
+		#about-text{
+			position:relative;
+			top:50%;
+			left:10px;
+
+		}
+		.review {
+
+            height:600px;
+            width:100%;
+}
+
+#product {
+            background-color:lightgreen;
+            height:auto;
+            width:100%;
+
+}
+#line1{
+    position:relative;
+    top:20px;
+    left:50px;
+}
+#line2{
+    position:relative;
+    top:30px;
+    left:50px;
+}
+.footer {
+            background-color:lightgreen;
+
+            width:100%;
+}
+
+.cord{
+    position:relative;
+    top:30%;
+}
+.rev-button{
+    position:relative;
+    top:35%;
+    left:45%;
+}
+
+
+		.fade-in .card {
+    animation: fade-in-card 0.5s ease-in-out;
+}
+
+@keyframes fade-in-card {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+nav-img1{
+    height:600px;
+}
+.logo-name{
+font-family: Copperplate,Copperplate Gothic Light,fantasy;
+}
+.red{
+    color:red;
+}
+iframe{
+position:relative;
+    left:79%;
+}
+
+#product-details-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 999;
+        }
+
+        #product-details-overlay.show {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #product-details-overlay .card {
+            max-width: 500px;
+            width: 90%;
+            margin: 0 auto;
+            margin-top: 10%; /* Added to center the card vertically */
+            position: relative;
+            padding: 15px;
+            background-color: #f8f9fa;
+			z-index: 1000;
+        }
+
+        #product-details-overlay .btn-close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 1.2rem;
+            color: #000;
+            background-color: transparent;
+            border: none;
+        }
+
+        #product-details-overlay .card-body {
+            padding: 20px;
+        }
+
+        #product-details-overlay .card-title {
+            margin-bottom: 10px;
+            font-size: 1.5rem;
+        }
+
+        #product-details-overlay .card-text {
+            margin-bottom: 20px;
+        }
+
+        #product-details-overlay img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .fa-times {
+            position: absolute;
+            top: 20px; /* Adjust the top margin as per your preference */
+            right: 10px;
+            font-size: 20px;
+            color: black;
+            cursor: pointer;
+        }

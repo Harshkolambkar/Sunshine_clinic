@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>All Reviews</title>
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>All Reviews</h1>
+
+        <div class="card-deck text-center">
+            {% for review in reviews %}
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">name: {{ review.user }}</h5>
+                    <p class="card-title">ratings: {{ review.rating }}</p>
+                    <p class="card-text">Comments: {{ review.comment }}</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    <!-- Include Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
